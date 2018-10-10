@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+    body
+        h1 For/Each
+        div
+            each n in [1,2,3,4,5]
+                p=n
+        div
+            each n, i in ["a","b","c","d"]
+                p=n +" - "+ i
+        div
+            -const grades={"web dev":85, "UI/UX":99}
+            each n, i in grades
+                p=n +" - "+ i
+            else
+                strong No Values here!
+        div
+            -const classes=[]
+            each n, i in classes
+                p=n +" - "+ i
+            else
+                strong No Values here!
