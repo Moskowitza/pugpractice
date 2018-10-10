@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title Case Statement in Pug
+    body
+        // order status =>Pending || In_transit || Completed
+        - const orderStatus = 'Pending'
+
+        case orderStatus
+            when 'Pending'
+                p order Pending
+            when 'In_Transit'
+                p in transit
+            when 'Completed'
+                p Your order is complete
+            default
+                p Order Status Unknown

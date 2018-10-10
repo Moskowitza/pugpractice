@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mixins in Pug</title>
+    <style>
+      .comment{
+          font-family: sans-serif;
+          line-height: 1.5;
+          padding: 10px;
+          border: 1px solid #555;
+          width: 250px;
+      }
+      
+      .date{
+          font-size:85%;
+          text-align:right;
+      }
+      .author{font-size:110%;}
+      .text{font-size:100%;}
+    </style>
+  </head>
+  <body>
+    <div class="comment"><em>(Posted by Admin)</em>
+      <div class="date">04-04-2018</div>
+      <div class="author">Aaron Moskowitz</div>
+      <div class="text">This is our comment body.</div>
+    </div>
+    <div class="comment">
+      <div class="date">03-30-2019</div>
+      <div class="author">Emily Luker</div>
+      <div class="text">Is it Gritty?</div>
+    </div>
+  </body>
+</html>
